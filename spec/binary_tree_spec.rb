@@ -43,7 +43,7 @@ describe BinaryTree do
       it "should return the node with a given name" do
         @tree.find("Ted").should_not be_nil
         @tree.find("Ted").left.data.should eq("Daniel")
-        @tree.find("Ted").right.data.should eq("Sally")
+        @tree.find("Ted").left.right.data.should eq("Sally")
       end
     end
 

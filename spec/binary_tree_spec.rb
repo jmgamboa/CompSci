@@ -25,7 +25,7 @@ describe BinaryTree do
 
     describe "Searching" do
       before do
-        pending "TODO add a searching function..."
+        
       end
 
       it "should count the number of nodes" do
@@ -49,7 +49,6 @@ describe BinaryTree do
 
     describe "Deletion" do
       before do
-        pending "TODO add a delete function..."
         @tree.delete("Ted")
       end
 

@@ -14,7 +14,6 @@ describe Fibonacci do
 
   describe "the iterative approach" do
     before do
-      pending "TODO... write an iterative method thats faster"
       before = Time.now
       @numbers = Fibonacci.new.iterative_seq(0, 10)
       @iterative = Time.now - before

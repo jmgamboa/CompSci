@@ -18,21 +18,9 @@ class BinaryTree
     end
   end
 
-  def nodes(node = self.root)
-      r = []
-      r += nodes(node.left) if node.left
-      r << node
-      r += nodes(node.right) if node.right
-      r.flatten
+  def search
+  
   end
-
-  def count(node = self.root)
-    i = 0
-    r = count(node.left) if node.left
-    r = count(node.right) if node.right
-    i += 1 if node.right.nil? and if node.right.nil?
-  end
-
 
   def to_s
     self.root.to_s.squeeze(" ").strip

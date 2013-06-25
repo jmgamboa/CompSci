@@ -45,6 +45,18 @@ describe BinaryTree do
         @tree.find("Ted").left.data.should eq("Daniel")
         @tree.find("Ted").left.right.data.should eq("Sally")
       end
+
+      it "should return nodes having data of length greater than 3" do
+        @tree.search do |node|
+          node.data.length > 3
+        end.should eq(["Alice", "Andy", "Barry", "Daniel", "Sally"])
+      end
+
+      it "should return nodes having exactly two children" do
+        @tree.search do |node|
+          node.left && node.right
+        end.should eq(["Dan"])
+      end
     end
 
     describe "Deletion" do

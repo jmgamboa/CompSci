@@ -8,6 +8,6 @@ class Node
   end
 
   def to_s
-    [left, data, right].join(" ")
+    data
   end
 end

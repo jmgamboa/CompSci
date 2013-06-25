@@ -20,25 +20,19 @@ class BinaryTree
   end
 
   def search(node = self.root)
-
     # find the root look to find all the child nodes exist using recursion
     #need to insert
     #for i in 0...length 
     #value = self[i]
     #return value if yield(value)
     tree = []
-       if node.left
+      if node.left
         tree += search(node.left)
-        puts "hello"
       end
     tree << node
       if node.right
         tree += search(node.right)
-        puts "hi"
-
       end
-
-
   end
 
   def find 
